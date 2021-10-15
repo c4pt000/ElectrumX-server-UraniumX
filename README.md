@@ -1,3 +1,8 @@
+# for the electrum-uraniumx wallet
+https://github.com/c4pt000/electrum-uraniumx
+
+for UraniumX desktop and daemon
+https://github.com/c4pt000/UraniumX-sync/releases
 
 place files in add-files where they go 
 
