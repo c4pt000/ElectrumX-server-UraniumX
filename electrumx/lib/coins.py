@@ -1243,6 +1243,9 @@ class DogecoinTestnet(Dogecoin):
 # dont use
 #    DESERIALIZER = lib_tx.DeserializerAuxPowSegWit
 
+
+
+
 class Radiocoin(AuxPowMixin, Coin):
     NAME = "Radiocoin"
     SHORTNAME = "RADC"
@@ -1264,6 +1267,50 @@ class Radiocoin(AuxPowMixin, Coin):
 #    DESERIALIZER = lib_tx.DeserializerSegWit
 #    DESERIALIZER = lib_tx.Deserializer
 
+
+
+
+class UraniumX(Coin):
+    NAME = "UraniumX"
+    SHORTNAME = "URX"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("44")
+    P2SH_VERBYTES = (bytes.fromhex("73"),)
+    WIF_BYTE = bytes.fromhex("0C")
+    GENESIS_HASH =  ('6be1ade2619d1402571996e436b726c8'
+		     'b0bd72f10fdcae10cff5acd369118626')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 10000
+    TX_COUNT_HEIGHT = 10000
+    TX_PER_BLOCK = 1
+
+    ESTIMATE_FEE = 0.00001
+    RELAY_FEE = 0.00001
+    DAEMON = daemon.FakeEstimateFeeDaemon
+
+
+
+#    TX_COUNT = 1408733
+ #   TX_COUNT_HEIGHT = 1015115
+  #  TX_PER_BLOCK = 1
+   # RPC_PORT = 9252
+    #REORG_LIMIT = 1000
+
+    #@classmethod
+    #def header_hash(cls, header):
+        #'''Given a header return the hash.'''
+      #  import zny_yespower_0_5
+       # return zny_yespower_0_5.getPoWHash(header)
+
+
+
+
+
+#    DESERIALIZER = lib_tx.DeserializerSegWit
+#    DESERIALIZER = lib_tx.Deserializer
+
 class RadiocoinTestnet(Radiocoin):
     NAME = "Radiocoin"
     SHORTNAME = "XRADC"
@@ -1277,6 +1324,7 @@ class RadiocoinTestnet(Radiocoin):
                      'ae4bd950491790e522f90dad86d2d1eb')
     DESERIALIZER = lib_tx.DeserializerAuxPow
 
+#    DESERIALIZER = lib_tx.Deserializer
 
 
 
@@ -3153,7 +3201,7 @@ class Ritocoin(Coin):
         import x21s_hash
         return x21s_hash.getPoWHash(header)
 
-
+#ravencoinlite replacement
 class Ravencoin(Coin):
     NAME = "Ravencoin"
     SHORTNAME = "RVN"
@@ -3162,16 +3210,23 @@ class Ravencoin(Coin):
     XPRV_VERBYTES = bytes.fromhex("0488ADE4")
     P2PKH_VERBYTE = bytes.fromhex("3C")
     P2SH_VERBYTES = (bytes.fromhex("7A"),)
-    GENESIS_HASH = ('0000006b444bc2f2ffe627be9d9e7e7a'
-                    '0730000870ef6eb6da46c8eae389df90')
+    WIF_BYTE = bytes.fromhex("80")
+    GENESIS_HASH = ('000000cdb10fc01df7fba251f2168ef7'
+		    'cd7854b571049db4902c315694461dd0')
+   # GENESIS_HASH = ('0000006b444bc2f2ffe627be9d9e7e7a'
+   #                 '0730000870ef6eb6da46c8eae389df90')
     DESERIALIZER = lib_tx.DeserializerSegWit
     X16RV2_ACTIVATION_TIME = 1569945600   # algo switch to x16rv2 at this timestamp
     KAWPOW_ACTIVATION_TIME = 1588788000  # kawpow algo activation time
     KAWPOW_ACTIVATION_HEIGHT = 1219736
     KAWPOW_HEADER_SIZE = 120
-    TX_COUNT = 5626682
-    TX_COUNT_HEIGHT = 887000
-    TX_PER_BLOCK = 6
+  #  TX_COUNT = 5626682
+  #  TX_COUNT_HEIGHT = 887000
+  #  TX_PER_BLOCK = 6
+    TX_COUNT = 10000
+    TX_COUNT_HEIGHT = 10000
+    TX_PER_BLOCK = 1
+
     RPC_PORT = 8766
     REORG_LIMIT = 100
     PEERS = [

@@ -1,0 +1,16 @@
+888     888                           d8b                        Y88b   d88P 
+888     888                           Y8P                         Y88b d88P  
+888     888                                                        Y88o88P   
+888     888 888d888  8888b.  88888b.  888 888  888 88888b.d88b.     Y888P    
+888     888 888P"       "88b 888 "88b 888 888  888 888 "888 "88b    d888b    
+888     888 888     .d888888 888  888 888 888  888 888  888  888   d88888b   
+Y88b. .d88P 888     888  888 888  888 888 Y88b 888 888  888  888  d88P Y88b  
+ "Y88888P"  888     "Y888888 888  888 888  "Y88888 888  888  888 d88P   Y88b 
+
+connected to electrumX-uraniumx
+bitcoin Donation address: 1MxdqrDRu97BNG9n17e8jejBwAUUxRCLhy
+dogecoin Donation address: DMq9mjF2BpWA9EZhMcpMmi6voVXiBMJY9B
+UraniumX Core 1.0.33 https://github.com/c4pt000/UraniumX-sync/releases
+run your own copy
+
+https://github.com/c4pt000/UraniumX-sync/releases

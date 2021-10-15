@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /opt/URANIUMX-electrumx-dogecoin-server
+source electrumx.source
+./electrumx_server &
