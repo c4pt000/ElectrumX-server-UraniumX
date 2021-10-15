@@ -1,0 +1,3 @@
+export DB_DIRECTORY=/var/electrumx-db-urx
+export COIN=UraniumX
+/opt/URANIUMX-electrumx-dogecoin-server/electrumx_compact_history 

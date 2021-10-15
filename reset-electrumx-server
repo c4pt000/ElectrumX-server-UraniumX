@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+killall python3
+radiocoin-cli stop
+sleep 5s
+radiocoind 
+
+/usr/bin/electrum-radc-server &
+
+
+uraniumx-cli stop
+sleep 5s
+uraniumxd
+/usr/bin/electrum-urx-server &

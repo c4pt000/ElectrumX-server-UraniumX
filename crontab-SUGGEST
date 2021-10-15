@@ -1,0 +1,12 @@
+@reboot electrum-uraniumx-compact-history
+@reboot electrum-radiocoin-compact-history
+@reboot radiocoind
+@reboot uraniumxd
+@reboot /usr/bin/electrum-radc-server
+@reboot /usr/bin/electrum-urx-server
+
+
+#every 8 hrs reset radiocoind and electrumx
+* */8 * * * /usr/bin/reset-electrumx-server
+
+
